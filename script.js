@@ -43,8 +43,6 @@ function addNums(){
     numbers.push(101);
 
     return numbers;
-
-
 }
 
 
@@ -68,6 +66,9 @@ let film = {
 */
 function addBoxOffice(){
     // Your answer here:
+    film.boxoffice = 269061;
+
+    return film;
 }
 
 /*
@@ -75,6 +76,9 @@ function addBoxOffice(){
 */
 function addActor(){
     // Your answer here:
+    film.actors.push("Yukiko Shimazaki");
+
+    return film;
 }
 
 /*
@@ -82,6 +86,9 @@ function addActor(){
 */
 function getLosses(){
     // Your answer here:
+    film.loss = film.boxoffice - film.budget;
+
+    return film.loss;
 }
 
 
@@ -101,6 +108,10 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+    for (let i = 0; i < numberVals.length; i++) {
+      vals[i] = letterVals[i] + numberVals[i];
+    }
+    return vals;
 }
 
 
